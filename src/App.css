@@ -2,9 +2,8 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+  width: 40%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,24 +14,136 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(9px + 1vmin);
+  color: white;
+  position:fixed;
+  width: 100%;
+  height: 90px;
+  padding-top: 20px;
+}
+
+.App-body{
+  padding-top: 120px;
+}
+
+h1{
+  padding: 1px auto;
+  margin: 1px;
+}
+
+.li_flat{
+  display: inline-flex;
+  margin: 10px;
+  padding: 10px auto;
+}
+
+.App-header ul{
+  height: 0;
+  overflow: hidden;
+}
+
+.App-header:hover ul{
+  height: auto; /*サブメニューの高さ*/
+  overflow: visible;
+}
+
+.App-header:hover{
+  height: 170px;
+}
+
+ul{
+  list-style-position:inside;
+}
+
+.button{
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  border: #ebb608;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+  color: white;
+  background-color: orange;
+}
+
+.button:hover{
+  background-color: white;
+  color: orange;
+  border: solid orange;
+}
+
+.guid_link{
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 5px;
+
+  background-color: hsl(197, 76%, 52%);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.guid_link:hover{
+  background-color: white;
+  color: hsl(197, 76%, 52%);
+  border: solid hsl(197, 76%, 52%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.skils{
+  font-style: oblique;
+  text-decoration: underline 5px;
+  text-decoration-color: #3c76eb;
+  font-weight: bolder;
 }
+
+.proEl{
+  border: solid #ebb608;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  vertical-align:top;
+  border-radius: 50px;
+  width: 40%;
+    height: 450px;
+}
+
+.div-flat{
+  display: inline-block;
+  vertical-align:top;
+}
+
+.chap{
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+a.title {
+  display: block;
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
+.App-body h1{
+  font-size: 50px;
+  text-decoration: underline 3px;
+  padding: 20px;
+  margin-top: -20px;
+  content: "";
+
+  color: #ACB6E5;
+  background: -webkit-linear-gradient(0deg, #ACB6E5, #86FDE8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 481px) {
+  .proEl {
+    width: 80%;
+    height:auto;
+  }
+  }
