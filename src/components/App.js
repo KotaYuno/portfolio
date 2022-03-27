@@ -58,24 +58,21 @@ function App() {
               />
             </div>
             <div className='proEl'>
-              <Title2 title={'Eqitter'}/>
+              <Title2 title={'Online Janken'}/>
               <Title3 title={'概要'}/>
-              <Context context={'プログラミング初学者や未経験者が実際の開発現場でのニュアンスを知ることができるユーザー辞書をchromeの拡張機能として実装しました。'}/>
-              <Context context={'こちらは先日参加したハッカソンでチーム開発したものとなります。自分の担当はバックエンドでフロントとのデータのやり取り、ユーザー辞書の登録の機能を担当しました。'}/>
+              <Context context={'現時点ではコンピューターとじゃんけんするだけのアプリケーションです。'}/>
+              <Context context={'オンライン上で遠くの人とじゃんけんができるように現在バックエンドをGOで開発中'}/>
               <Title3 title={'使用技術'}/>
               <ul>
-                <li className='li_flat skils'>Python</li>
-                <li className='li_flat skils'>Flask</li>
                 <li className='li_flat skils'>React</li>
-                <li className='li_flat skils'>Heroku</li>
               </ul>
               <UrlButton 
-                url={'https://eqitter.herokuapp.com/'}
-                context={'View'}
+                url={'https://kotayuno.github.io/janken/'}
+                context={'Play'}
               />
               <UrlButton
                 context={'code'}
-                url={'https://github.com/KotaYuno/eqitter'}
+                url={'https://github.com/KotaYuno/janken/'}
               />
             </div>
           </div>
